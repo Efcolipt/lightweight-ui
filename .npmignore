@@ -1,6 +1,2 @@
 node_modules
-.prettierrc
-.prettierignore
-CHANGELOG.md
 lib
-.husky
