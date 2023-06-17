@@ -30,7 +30,7 @@
   },
   "scripts": {
     "lint": "prettier -c --parser typescript \"lib/*/{src,__tests__,e2e}/**/*.[jt]s?(x)\"",
-    "build:core": "vite build --config ./scripts/core/vite.build.config.ts && tsc --project ./lib/core/tsconfig.declaration.json",
+    "build:core": "vite build --config ./scripts/core/vite.build.config.ts && tsc --project ./scripts/core/tsconfig.declaration.json",
     "test:unit": "",
     "prepare": "husky install"
   },

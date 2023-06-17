@@ -11,6 +11,9 @@
     "lib": ["esnext", "dom"],
     "paths": {
       "@/utils": ["./lib/utils"]
-    }
-  }
+    },
+    "allowJs": true,
+    "noImplicitThis": true
+  },
+  "include": ["test/**/*"]
 }
