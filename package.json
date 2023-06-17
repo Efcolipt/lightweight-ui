@@ -1,7 +1,7 @@
 {
   "name": "lightweight-ui",
   "version": "0.0.0",
-  "main": "./dist/core/lightweight-ui.common.js",
+  "main": "./dist/core/lightweight-ui.cjs.js",
   "module": "./dist/core/lightweight-ui.es.js",
   "unpkg": "./dist/core/lightweight-ui.umd.js",
   "typings": "./dist/core/types/index.d.ts",
@@ -13,12 +13,12 @@
   "exports": {
     ".": {
       "import": "./dist/core/lightweight-ui.es.js",
-      "require": "./dist/core/lightweight-ui.common.js",
+      "require": "./dist/core/lightweight-ui.cjs.js",
       "types": "./dist/core/types/index.d.ts"
     },
     "./core": {
       "import": "./dist/core/lightweight-ui.es.js",
-      "require": "./dist/core/lightweight-ui.common.js",
+      "require": "./dist/core/lightweight-ui.cjs.js",
       "types": "./dist/core/types/index.d.ts"
     },
     "./dist/*": "./dist/*",
