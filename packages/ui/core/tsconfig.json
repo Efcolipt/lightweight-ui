@@ -1,0 +1,21 @@
+{
+  "extends": "@lightweight-ui/typescript-config/base.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "strict": true,
+    "skipLibCheck": true,
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "noEmit": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "incremental": true,
+    "jsx": "preserve",
+    "baseUrl": "."
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["./dist/**/*"]
+}

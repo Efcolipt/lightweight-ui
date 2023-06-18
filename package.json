@@ -1,25 +1,26 @@
 {
   "private": true,
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "packages/config/*",
+    "packages/ui/*"
   ],
   "engines": {
     "node": ">=14.19.3"
   },
   "scripts": {
-    "code:fix": "prettier --parser=typescript --write packages/*/{src,__tests__,e2e}/**/*.[jt]s?(x)",
+    "code:fix": "prettier --parser=typescript --write ./packages/src/**/*.[jt]sx?",
     "prepare": "husky install"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.5",
     "@commitlint/config-conventional": "^17.6.5",
-    "@lightweight-ui/config": "workspace:*",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.2",
     "prettier": "^2.8.8"
   },
   "lint-staged": {
-    "*.[jt]s?(x)": "npm run code:fix"
+    "*.[jt]sx?": "npm run code:fix"
   },
   "commitlint": {
     "rules": {

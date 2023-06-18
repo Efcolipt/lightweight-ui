@@ -1,9 +1,12 @@
-import { deepMerge } from '@lightweight-ui/utils'
+import { deepMerge } from '@lightweight-ui/shared'
 import { SliderOptions } from './options'
-import { SliderHooks } from './types'
 import type { ISliderOptions } from './options'
 
-export default class Slider {
+export enum SliderHooks {
+  CREATED = 'created',
+}
+
+export class Slider {
   private slider!: Element
   private options!: ISliderOptions
   private slides: Element[] = []
@@ -15,21 +18,21 @@ export default class Slider {
 
     if (slider) {
       this.slider = slider
-      this.#init()
+      this.init()
     }
   }
 
-  #init() {
+  private init() {
     this.slides = Array.from(this.slider.children)
 
-    this.#callHook(SliderHooks.CREATED)
+    this.callHook(SliderHooks.CREATED)
   }
 
-  #callHook(hook: SliderHooks) {
+  private callHook(hook: SliderHooks) {
     console.log(hook)
   }
 
-  nextSlide() {}
+  public nextSlide() {}
 
-  prevSlide() {}
+  public prevSlide() {}
 }

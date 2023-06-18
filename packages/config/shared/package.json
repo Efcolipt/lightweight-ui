@@ -1,0 +1,39 @@
+{
+  "name": "@lightweight-ui/shared",
+  "private": true,
+  "main": "./dist/index.es.js",
+  "module": "./dist/index.es.js",
+  "typings": "./dist/index.d.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.cjs.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./dist*": "./dist/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Efcolipt/lightweight-ui.git",
+    "directory": "packages/config/shared"
+  },
+  "bugs": {
+    "url": "https://github.com/Efcolipt/lightweight-ui/issues"
+  },
+  "homepage": "https://github.com/Efcolipt/lightweight-ui#readme",
+  "author": "Baykov Ivan <efcolipt@gmail.com> (https://github.com/Efcolipt/)",
+  "description": "Shared utils for `@lightweight-ui/* packages",
+  "scripts": {
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "deepmerge": "^4.3.1",
+    "typescript": "^5.1.3",
+    "vite": "^4.3.9",
+    "vite-plugin-dts": "^2.3.0"
+  }
+}
