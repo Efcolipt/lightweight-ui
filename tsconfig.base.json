@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "baseUrl": ".",
+    "jsx": "preserve",
+    "strict": true,
+    "target": "ES2015",
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "removeComments": false,
+    "allowJs": true,
+    "noImplicitThis": true,
+    "types": [],
+    "lib": ["esnext", "dom"],
+    "paths": {
+      "@/utils": ["packages/utils"],
+      "@lightweight-ui/*": ["packages/*"]
+    }
+  },
+  "exclude": ["node_modules", "**/dist", "**/__tests__/**/*", "**/*.md"]
+}

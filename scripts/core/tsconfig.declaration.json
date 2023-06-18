@@ -1,7 +1,0 @@
-{
-  "compilerOptions": {
-    "outFile": "../../dist/core/types/index.d.ts"
-  },
-  "extends": ["./tsconfig.json", "../../tsconfig.declaration.json"],
-  "include": ["../../lib/core/src/index.ts"]
-}
