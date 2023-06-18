@@ -18,8 +18,8 @@ const SliderOptions = {
   loop: true,
 }
 
-type ISliderOptions = typeof SliderOptions
+enum SliderHooks {
+  CREATED = 'created',
+}
 
-export { SliderOptions }
-
-export type { ISliderOptions }
+export { SliderOptions, SliderHooks }
