@@ -20,4 +20,6 @@ const SliderOptions = {
 
 type ISliderOptions = typeof SliderOptions
 
-export { ISliderOptions, SliderOptions }
+export { SliderOptions }
+
+export type { ISliderOptions }

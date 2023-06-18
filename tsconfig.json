@@ -3,24 +3,33 @@
     "outDir": "dist",
     "baseUrl": ".",
     "jsx": "preserve",
-    "strict": true,
     "target": "ES2015",
     "module": "ESNext",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "allowJs": true,
+    "useDefineForClassFields": true,
     "skipLibCheck": true,
-    "esModuleInterop": true,
-    "moduleResolution": "node",
-    "noUnusedLocals": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "removeComments": false,
-    "allowJs": true,
     "noImplicitThis": true,
-    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+
     "paths": {
       "@lightweight-ui/*": ["packages/*"]
     }
   },
-  "references": [{ "path": "./tsconfig.node.json" }],
-  "include": ["./packages/**/*"],
   "exclude": ["node_modules", "**/dist", "**/__tests__/**/*", "**/*.md"]
 }
