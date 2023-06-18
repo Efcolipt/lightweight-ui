@@ -1,59 +1,59 @@
 {
-    "name": "@lightweight-ui/core",
-    "version": "0.0.0",
-    "main": "./dist/lightweight-ui.cjs.js",
-    "module": "./dist/lightweight-ui.es.js",
-    "unpkg": "./dist/lightweight-ui.umd.js",
-    "typings": "./dist/types/index.d.ts",
-    "jsdelivr": "./dist/lightweight-ui.umd.js",
-    "files": [
-        "dist",
-        "README.md"
-    ],
-    "exports": {
-        ".": {
-            "import": "./dist/lightweight-ui.es.js",
-            "require": "./dist/lightweight-ui.cjs.js",
-            "types": "./dist/types/index.d.ts"
-        },
-        "./dist/*": "./dist/*",
-        "./package.json": "./package.json"
+  "name": "@lightweight-ui/core",
+  "version": "0.0.0",
+  "main": "./dist/lightweight-ui.cjs.js",
+  "module": "./dist/lightweight-ui.es.js",
+  "unpkg": "./dist/lightweight-ui.umd.js",
+  "typings": "./dist/types/index.d.ts",
+  "jsdelivr": "./dist/lightweight-ui.umd.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/lightweight-ui.es.js",
+      "require": "./dist/lightweight-ui.cjs.js",
+      "types": "./dist/types/index.d.ts"
     },
-    "sideEffects": false,
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/Efcolipt/lightweight-ui.git",
-        "directory": "packages/@lightweight-ui/core"
+    "./dist/*": "./dist/*",
+    "./package.json": "./package.json"
+  },
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Efcolipt/lightweight-ui.git",
+    "directory": "packages/@lightweight-ui/core"
+  },
+  "bugs": {
+    "url": "https://github.com/Efcolipt/lightweight-ui/issues"
+  },
+  "homepage": "https://github.com/Efcolipt/lightweight-ui#readme",
+  "author": "Baykov Ivan <efcolipt@gmail.com> (https://github.com/Efcolipt/)",
+  "description": "Intuitive, type safe and flexible, super lightweight ui library for Vue/Nuxt/Svelte/React/Web",
+  "copyright": "Copyright © 2023-present Efcolipt",
+  "keywords": [],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "release-it": {
+    "git": {
+      "commitMessage": "chore(release): v${version}"
     },
-    "bugs": {
-        "url": "https://github.com/Efcolipt/lightweight-ui/issues"
+    "github": {
+      "release": true,
+      "releaseName": "v${version}"
     },
-    "homepage": "https://github.com/Efcolipt/lightweight-ui#readme",
-    "author": "Baykov Ivan <efcolipt@gmail.com> (https://github.com/Efcolipt/)",
-    "description": "Intuitive, type safe and flexible, super lightweight ui library for Vue/Nuxt/Svelte/React/Web",
-    "copyright": "Copyright © 2023-present Efcolipt",
-    "keywords": [],
-    "license": "MIT",
-    "publishConfig": {
-        "access": "public"
-    },
-    "release-it": {
-        "git": {
-            "commitMessage": "chore(release): v${version}"
-        },
-        "github": {
-            "release": true,
-            "releaseName": "v${version}"
-        },
-        "plugins": {
-            "@release-it/conventional-changelog": {
-                "preset": "angular",
-                "infile": "CHANGELOG.md",
-                "header": "# Changelog"
-            }
-        }
-    },
-    "devDependencies": {
-        "deepmerge": "^4.3.1"
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "preset": "angular",
+        "infile": "CHANGELOG.md",
+        "header": "# Changelog"
+      }
     }
+  },
+  "devDependencies": {
+    "deepmerge": "^4.3.1"
+  }
 }
