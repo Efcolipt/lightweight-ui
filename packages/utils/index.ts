@@ -1,5 +1,8 @@
-import { all } from 'deepmerge'
+import { all, Options } from 'deepmerge'
 
-export const deepMerge = <T = object>(...objects: object[]): T => {
-  return all<T>(objects)
+export const deepMerge = <T = object>(
+  objects: Partial<T>[],
+  options?: Options
+): T => {
+  return all<T>(objects, options)
 }

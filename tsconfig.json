@@ -15,10 +15,8 @@
     "removeComments": false,
     "allowJs": true,
     "noImplicitThis": true,
-    "types": [],
-    "lib": ["esnext", "dom"],
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
     "paths": {
-      "@/utils": ["packages/utils"],
       "@lightweight-ui/*": ["packages/*"]
     }
   },

@@ -1,4 +1,4 @@
-import { deepMerge } from '@/utils'
+import { deepMerge } from '@lightweight-ui/utils'
 import { ISliderOptions, SliderOptions } from './options'
 import { SliderHooks } from './types'
 
@@ -9,7 +9,7 @@ export default class Slider {
   #currentIndex = 0
 
   constructor(mount: string, options = {} as ISliderOptions) {
-    this.#options = deepMerge<ISliderOptions>(options)
+    this.#options = deepMerge<ISliderOptions>([options])
     const slider = document.querySelector(mount)
 
     if (slider) {
