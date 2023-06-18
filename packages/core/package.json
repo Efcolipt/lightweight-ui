@@ -32,7 +32,6 @@
   "author": "Baykov Ivan <efcolipt@gmail.com> (https://github.com/Efcolipt/)",
   "description": "Intuitive, type safe and flexible, super lightweight ui library for Vue/Nuxt/Svelte/React/Web",
   "copyright": "Copyright © 2023-present Efcolipt",
-  "keywords": [],
   "license": "MIT",
   "publishConfig": {
     "access": "public"
@@ -54,6 +53,7 @@
     }
   },
   "devDependencies": {
-    "deepmerge": "^4.3.1"
+    "deepmerge": "^4.3.1",
+    "vite": "^4.3.9"
   }
 }
