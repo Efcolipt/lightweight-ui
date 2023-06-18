@@ -20,5 +20,7 @@
       "@lightweight-ui/*": ["packages/*"]
     }
   },
+  "references": [{ "path": "./tsconfig.node.json" }],
+  "include": ["./packages/**/*"],
   "exclude": ["node_modules", "**/dist", "**/__tests__/**/*", "**/*.md"]
 }
