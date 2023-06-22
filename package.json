@@ -34,8 +34,7 @@
     "npm": {
       "publish": false,
       "versionArgs": [
-        "--allow-same-version",
-        "--workspaces-update=false"
+        "--allow-same-version"
       ]
     },
     "github": {
