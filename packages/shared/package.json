@@ -1,6 +1,6 @@
 {
   "name": "@lightweight-ui/shared",
-  "private": true,
+  "version": "0.0.0",
   "main": "./dist/index.es.js",
   "module": "./dist/index.es.js",
   "typings": "./dist/index.d.ts",
@@ -21,7 +21,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Efcolipt/lightweight-ui.git",
-    "directory": "packages/config/shared"
+    "directory": "packages/shared"
   },
   "bugs": {
     "url": "https://github.com/Efcolipt/lightweight-ui/issues"
@@ -29,6 +29,7 @@
   "homepage": "https://github.com/Efcolipt/lightweight-ui#readme",
   "author": "Baykov Ivan <efcolipt@gmail.com> (https://github.com/Efcolipt/)",
   "description": "Shared utils for `@lightweight-ui/* packages",
+  "license": "MIT",
   "scripts": {
     "build": "vite build"
   },

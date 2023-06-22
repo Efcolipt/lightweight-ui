@@ -4,6 +4,10 @@ import { BUILD_LIB_ALIASES } from './const'
 import dts from 'vite-plugin-dts'
 
 export default defineConfig({
+  optimizeDeps: {
+    include: [BUILD_LIB_ALIASES.shared],
+  },
+
   plugins: [
     dts({
       insertTypesEntry: true,

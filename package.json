@@ -1,9 +1,8 @@
 {
   "private": true,
   "workspaces": [
-    "packages/*",
     "packages/shared",
-    "packages/ui/*"
+    "packages/ui/core"
   ],
   "engines": {
     "node": ">=14.19.3"
@@ -11,17 +10,35 @@
   "scripts": {
     "code:fix": "prettier --parser=typescript --write ./packages/src/**/*.[jt]sx?",
     "prepare": "husky install",
-    "build:core": "npm run build -w @lightweight-ui/shared && npm run build -w @lightweight-ui/core"
+    "prebuild": "yarn workspace @lightweight-ui/shared run build ",
+    "build:core": "yarn prebuild && yarn workspace @lightweight-ui/core run build"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.5",
     "@commitlint/config-conventional": "^17.6.5",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.2",
-    "prettier": "^2.8.8"
+    "prettier": "^2.8.8",
+    "release-it": "^15.11.0"
   },
   "lint-staged": {
     "*.[jt]sx?": "npm run code:fix"
+  },
+  "release-it": {
+    "git": {
+      "commitMessage": "chore(release): v${version}"
+    },
+    "github": {
+      "release": true,
+      "releaseName": "v${version}"
+    },
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "preset": "angular",
+        "infile": "CHANGELOG.md",
+        "header": "# Changelog"
+      }
+    }
   },
   "commitlint": {
     "rules": {
