@@ -1,6 +1,6 @@
 {
   "name": "@lightweight-ui/core",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "main": "./dist/index.es.js",
   "module": "./dist/index.es.js",
   "unpkg": "./dist/index.umd.js",
@@ -39,7 +39,7 @@
     "build": "vite build"
   },
   "dependencies": {
-    "@lightweight-ui/shared": "workspace:*"
+    "@lightweight-ui/shared": "0.1.0"
   },
   "devDependencies": {
     "typescript": "^5.1.3",
