@@ -18,5 +18,9 @@ export default defineConfig({
       formats: ['cjs', 'es', 'umd'],
       fileName: (format, entryName) => `${entryName}.${format}.js`,
     },
+
+    rollupOptions: {
+      external: [BUILD_LIB_ALIASES.shared],
+    },
   },
 })
