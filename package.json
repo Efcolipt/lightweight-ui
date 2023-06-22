@@ -9,6 +9,7 @@
     "node": ">=14.19.3"
   },
   "scripts": {
+    "test:unit": "",
     "code:fix": "prettier --parser=typescript --write ./packages/src/**/*.[jt]sx?",
     "prepare": "husky install",
     "prebuild": "yarn workspace @lightweight-ui/shared run build ",
