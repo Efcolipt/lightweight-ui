@@ -2,7 +2,7 @@
   "private": true,
   "workspaces": [
     "packages/*",
-    "packages/config/*",
+    "packages/shared",
     "packages/ui/*"
   ],
   "engines": {
@@ -10,7 +10,8 @@
   },
   "scripts": {
     "code:fix": "prettier --parser=typescript --write ./packages/src/**/*.[jt]sx?",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "build:core": "npm run build -w @lightweight-ui/shared && npm run build -w @lightweight-ui/core"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.5",

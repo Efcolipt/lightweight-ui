@@ -1,5 +1,5 @@
 {
-  "extends": "@lightweight-ui/typescript-config/base.json",
+  "extends": "@lightweight-ui/shared/typescript-config/base",
   "compilerOptions": {
     "outDir": "./dist",
     "strict": true,

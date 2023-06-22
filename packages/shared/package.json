@@ -12,9 +12,11 @@
     ".": {
       "import": "./dist/index.es.js",
       "require": "./dist/index.cjs.js",
+      "default": "./dist/index.es.js",
       "types": "./dist/index.d.ts"
     },
-    "./dist*": "./dist/*"
+    "./dist*": "./dist/*",
+    "./typescript-config/base": "./configs/typescript.base.json"
   },
   "repository": {
     "type": "git",
