@@ -39,7 +39,7 @@
     "build": "vite build"
   },
   "dependencies": {
-    "@lightweight-ui/shared": "latest"
+    "@lightweight-ui/shared": "workspace:*"
   },
   "devDependencies": {
     "typescript": "^5.1.3",

@@ -329,7 +329,7 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@lightweight-ui/shared@latest":
+"@lightweight-ui/shared@workspace:*":
   version "0.0.0"
   resolved "https://registry.yarnpkg.com/@lightweight-ui/shared/-/shared-0.0.0.tgz#4ec27f7dc7e819378baa4fe26e624f8c94d411cf"
   integrity sha512-JFXlss/F/xlkKwDz7/b6PXSWSOxQfdxiYuJ8Rc5UVFaBUXGNzHabw9VANiXCeLNLVcrBeVOS9cAQeK9tk355Cg==
