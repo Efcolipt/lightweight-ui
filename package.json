@@ -32,7 +32,11 @@
       "commitMessage": "chore(release): v${version}"
     },
     "npm": {
-      "publish": false
+      "publish": false,
+      "versionArgs": [
+        "--allow-same-version",
+        "--workspaces-update=false"
+      ]
     },
     "github": {
       "release": true,
