@@ -20,6 +20,9 @@
     "./package.json": "./package.json"
   },
   "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Efcolipt/lightweight-ui.git",
@@ -34,6 +37,9 @@
   "license": "MIT",
   "scripts": {
     "build": "vite build"
+  },
+  "dependencies": {
+    "@lightweight-ui/shared": "latest"
   },
   "devDependencies": {
     "typescript": "^5.1.3",

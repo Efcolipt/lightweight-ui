@@ -30,6 +30,9 @@
   "author": "Baykov Ivan <efcolipt@gmail.com> (https://github.com/Efcolipt/)",
   "description": "Shared utils for `@lightweight-ui/* packages",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "vite build"
   },
