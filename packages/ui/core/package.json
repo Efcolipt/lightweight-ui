@@ -1,0 +1,49 @@
+{
+  "name": "@lightweight-ui/core",
+  "version": "0.1.0",
+  "main": "./dist/index.es.js",
+  "module": "./dist/index.es.js",
+  "unpkg": "./dist/index.umd.js",
+  "typings": "./dist/index.d.ts",
+  "jsdelivr": "./dist/index.umd.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./dist/*": "./dist/*",
+    "./package.json": "./package.json"
+  },
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Efcolipt/lightweight-ui.git",
+    "directory": "packages/ui/core"
+  },
+  "bugs": {
+    "url": "https://github.com/Efcolipt/lightweight-ui/issues"
+  },
+  "homepage": "https://github.com/Efcolipt/lightweight-ui#readme",
+  "author": "Baykov Ivan <efcolipt@gmail.com> (https://github.com/Efcolipt/)",
+  "description": "Intuitive, type safe and flexible, super lightweight ui library for Vue/Nuxt/Svelte/React/Web",
+  "license": "MIT",
+  "scripts": {
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@lightweight-ui/shared": "0.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.3",
+    "vite": "^4.3.9",
+    "vite-plugin-dts": "^2.3.0"
+  }
+}
